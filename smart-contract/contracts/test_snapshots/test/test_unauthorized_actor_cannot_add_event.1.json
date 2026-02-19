@@ -11,13 +11,37 @@
           "function": {
             "contract_fn": {
               "contract_address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-              "function_name": "create_product",
+              "function_name": "register_product",
               "args": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "string": "PROD-01"
+                },
+                {
                   "string": "Test Product"
+                },
+                {
+                  "string": "Description"
+                },
+                {
+                  "string": "Origin"
+                },
+                {
+                  "string": "Category"
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "map": []
                 }
               ]
             }
@@ -45,10 +69,61 @@
             "key": {
               "vec": [
                 {
+                  "symbol": "Auth"
+                },
+                {
+                  "string": "PROD-01"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "Auth"
+                    },
+                    {
+                      "string": "PROD-01"
+                    },
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "bool": true
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
                   "symbol": "Product"
                 },
                 {
-                  "u64": 1
+                  "string": "PROD-01"
                 }
               ]
             },
@@ -68,7 +143,7 @@
                       "symbol": "Product"
                     },
                     {
-                      "u64": 1
+                      "string": "PROD-01"
                     }
                   ]
                 },
@@ -77,7 +152,23 @@
                   "map": [
                     {
                       "key": {
-                        "symbol": "authorized_actors"
+                        "symbol": "active"
+                      },
+                      "val": {
+                        "bool": true
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "category"
+                      },
+                      "val": {
+                        "string": "Category"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "certifications"
                       },
                       "val": {
                         "vec": []
@@ -93,10 +184,34 @@
                     },
                     {
                       "key": {
+                        "symbol": "custom"
+                      },
+                      "val": {
+                        "map": []
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "description"
+                      },
+                      "val": {
+                        "string": "Description"
+                      }
+                    },
+                    {
+                      "key": {
                         "symbol": "id"
                       },
                       "val": {
-                        "u64": 1
+                        "string": "PROD-01"
+                      }
+                    },
+                    {
+                      "key": {
+                        "symbol": "media_hashes"
+                      },
+                      "val": {
+                        "vec": []
                       }
                     },
                     {
@@ -109,13 +224,83 @@
                     },
                     {
                       "key": {
+                        "symbol": "origin"
+                      },
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "location"
+                            },
+                            "val": {
+                              "string": "Origin"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "key": {
                         "symbol": "owner"
                       },
                       "val": {
                         "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                       }
+                    },
+                    {
+                      "key": {
+                        "symbol": "tags"
+                      },
+                      "val": {
+                        "vec": []
+                      }
                     }
                   ]
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "ProductEventIds"
+                },
+                {
+                  "string": "PROD-01"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "ProductEventIds"
+                    },
+                    {
+                      "string": "PROD-01"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "vec": []
                 }
               }
             },
@@ -146,20 +331,7 @@
                     "executable": {
                       "wasm": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
                     },
-                    "storage": [
-                      {
-                        "key": {
-                          "vec": [
-                            {
-                              "symbol": "ProductCounter"
-                            }
-                          ]
-                        },
-                        "val": {
-                          "u64": 1
-                        }
-                      }
-                    ]
+                    "storage": null
                   }
                 }
               }
@@ -241,7 +413,7 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "create_product"
+                "symbol": "register_product"
               }
             ],
             "data": {
@@ -250,32 +422,33 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "string": "PROD-01"
+                },
+                {
                   "string": "Test Product"
+                },
+                {
+                  "string": "Description"
+                },
+                {
+                  "string": "Origin"
+                },
+                {
+                  "string": "Category"
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "vec": []
+                },
+                {
+                  "map": []
                 }
               ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "contract",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "product"
-              },
-              {
-                "symbol": "created"
-              }
-            ],
-            "data": {
-              "u64": 1
             }
           }
         }
@@ -294,12 +467,10 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "create_product"
+                "symbol": "register_product"
               }
             ],
-            "data": {
-              "u64": 1
-            }
+            "data": "void"
           }
         }
       },
@@ -320,19 +491,25 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "add_event"
+                "symbol": "add_tracking_event"
               }
             ],
             "data": {
               "vec": [
                 {
-                  "u64": 1
-                },
-                {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                 },
                 {
-                  "string": "Unauthorized event"
+                  "string": "PROD-01"
+                },
+                {
+                  "symbol": "EVENT"
+                },
+                {
+                  "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                },
+                {
+                  "string": "Event Note"
                 }
               ]
             }
@@ -353,12 +530,12 @@
                 "symbol": "fn_return"
               },
               {
-                "symbol": "add_event"
+                "symbol": "add_tracking_event"
               }
             ],
             "data": {
               "error": {
-                "contract": 6
+                "contract": 3
               }
             }
           }
@@ -379,7 +556,7 @@
               },
               {
                 "error": {
-                  "contract": 6
+                  "contract": 3
                 }
               }
             ],
@@ -404,7 +581,7 @@
               },
               {
                 "error": {
-                  "contract": 6
+                  "contract": 3
                 }
               }
             ],
@@ -414,18 +591,24 @@
                   "string": "contract try_call failed"
                 },
                 {
-                  "symbol": "add_event"
+                  "symbol": "add_tracking_event"
                 },
                 {
                   "vec": [
                     {
-                      "u64": 1
-                    },
-                    {
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                     },
                     {
-                      "string": "Unauthorized event"
+                      "string": "PROD-01"
+                    },
+                    {
+                      "symbol": "EVENT"
+                    },
+                    {
+                      "bytes": "0000000000000000000000000000000000000000000000000000000000000000"
+                    },
+                    {
+                      "string": "Event Note"
                     }
                   ]
                 }
