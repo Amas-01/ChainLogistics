@@ -17,31 +17,10 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
+                  "string": "Nigeria"
                 },
                 {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
-                },
-                {
-                  "vec": []
-                },
-                {
-                  "vec": []
-                },
-                {
-                  "vec": []
-                },
-                {
-                  "map": []
+                  "string": "Metadata"
                 }
               ]
             }
@@ -63,7 +42,7 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
+                  "u64": 1
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
@@ -86,7 +65,7 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
+                  "u64": 1
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
@@ -98,6 +77,7 @@
         }
       ]
     ],
+    [],
     [],
     []
   ],
@@ -118,10 +98,55 @@
             "key": {
               "vec": [
                 {
+                  "symbol": "AllProductsIndex"
+                },
+                {
+                  "u64": 1
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "AllProductsIndex"
+                    },
+                    {
+                      "u64": 1
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 1
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
                   "symbol": "Auth"
                 },
                 {
-                  "string": "PROD-01"
+                  "u64": 1
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
@@ -144,7 +169,7 @@
                       "symbol": "Auth"
                     },
                     {
-                      "string": "PROD-01"
+                      "u64": 1
                     },
                     {
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
@@ -169,10 +194,202 @@
             "key": {
               "vec": [
                 {
+                  "symbol": "OriginProductCount"
+                },
+                {
+                  "string": "Nigeria"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "OriginProductCount"
+                    },
+                    {
+                      "string": "Nigeria"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 1
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "OriginProductIndex"
+                },
+                {
+                  "string": "Nigeria"
+                },
+                {
+                  "u64": 1
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "OriginProductIndex"
+                    },
+                    {
+                      "string": "Nigeria"
+                    },
+                    {
+                      "u64": 1
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 1
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "OwnerProductCount"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "OwnerProductCount"
+                    },
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 1
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
+                  "symbol": "OwnerProductIndex"
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "u64": 1
+                }
+              ]
+            },
+            "durability": "persistent"
+          }
+        },
+        [
+          {
+            "last_modified_ledger_seq": 0,
+            "data": {
+              "contract_data": {
+                "ext": "v0",
+                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+                "key": {
+                  "vec": [
+                    {
+                      "symbol": "OwnerProductIndex"
+                    },
+                    {
+                      "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                    },
+                    {
+                      "u64": 1
+                    }
+                  ]
+                },
+                "durability": "persistent",
+                "val": {
+                  "u64": 1
+                }
+              }
+            },
+            "ext": "v0"
+          },
+          4095
+        ]
+      ],
+      [
+        {
+          "contract_data": {
+            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
+            "key": {
+              "vec": [
+                {
                   "symbol": "Product"
                 },
                 {
-                  "string": "PROD-01"
+                  "u64": 1
                 }
               ]
             },
@@ -192,7 +409,7 @@
                       "symbol": "Product"
                     },
                     {
-                      "string": "PROD-01"
+                      "u64": 1
                     }
                   ]
                 },
@@ -209,22 +426,6 @@
                     },
                     {
                       "key": {
-                        "symbol": "category"
-                      },
-                      "val": {
-                        "string": "Category"
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "certifications"
-                      },
-                      "val": {
-                        "vec": []
-                      }
-                    },
-                    {
-                      "key": {
                         "symbol": "created_at"
                       },
                       "val": {
@@ -233,42 +434,18 @@
                     },
                     {
                       "key": {
-                        "symbol": "custom"
-                      },
-                      "val": {
-                        "map": []
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "description"
-                      },
-                      "val": {
-                        "string": "Description"
-                      }
-                    },
-                    {
-                      "key": {
                         "symbol": "id"
                       },
                       "val": {
-                        "string": "PROD-01"
+                        "u64": 1
                       }
                     },
                     {
                       "key": {
-                        "symbol": "media_hashes"
+                        "symbol": "metadata"
                       },
                       "val": {
-                        "vec": []
-                      }
-                    },
-                    {
-                      "key": {
-                        "symbol": "name"
-                      },
-                      "val": {
-                        "string": "Test Product"
+                        "string": "Metadata"
                       }
                     },
                     {
@@ -276,16 +453,7 @@
                         "symbol": "origin"
                       },
                       "val": {
-                        "map": [
-                          {
-                            "key": {
-                              "symbol": "location"
-                            },
-                            "val": {
-                              "string": "Origin"
-                            }
-                          }
-                        ]
+                        "string": "Nigeria"
                       }
                     },
                     {
@@ -295,61 +463,8 @@
                       "val": {
                         "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                       }
-                    },
-                    {
-                      "key": {
-                        "symbol": "tags"
-                      },
-                      "val": {
-                        "vec": []
-                      }
                     }
                   ]
-                }
-              }
-            },
-            "ext": "v0"
-          },
-          4095
-        ]
-      ],
-      [
-        {
-          "contract_data": {
-            "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-            "key": {
-              "vec": [
-                {
-                  "symbol": "ProductEventIds"
-                },
-                {
-                  "string": "PROD-01"
-                }
-              ]
-            },
-            "durability": "persistent"
-          }
-        },
-        [
-          {
-            "last_modified_ledger_seq": 0,
-            "data": {
-              "contract_data": {
-                "ext": "v0",
-                "contract": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2KM",
-                "key": {
-                  "vec": [
-                    {
-                      "symbol": "ProductEventIds"
-                    },
-                    {
-                      "string": "PROD-01"
-                    }
-                  ]
-                },
-                "durability": "persistent",
-                "val": {
-                  "vec": []
                 }
               }
             },
@@ -380,7 +495,32 @@
                     "executable": {
                       "wasm": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
                     },
-                    "storage": null
+                    "storage": [
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "ActiveProducts"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u64": 1
+                        }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "symbol": "TotalProducts"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "u64": 1
+                        }
+                      }
+                    ]
                   }
                 }
               }
@@ -537,31 +677,10 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
+                  "string": "Nigeria"
                 },
                 {
-                  "string": "Test Product"
-                },
-                {
-                  "string": "Description"
-                },
-                {
-                  "string": "Origin"
-                },
-                {
-                  "string": "Category"
-                },
-                {
-                  "vec": []
-                },
-                {
-                  "vec": []
-                },
-                {
-                  "vec": []
-                },
-                {
-                  "map": []
+                  "string": "Metadata"
                 }
               ]
             }
@@ -585,7 +704,9 @@
                 "symbol": "register_product"
               }
             ],
-            "data": "void"
+            "data": {
+              "u64": 1
+            }
           }
         }
       },
@@ -615,7 +736,7 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
+                  "u64": 1
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
@@ -667,7 +788,7 @@
               }
             ],
             "data": {
-              "string": "PROD-01"
+              "u64": 1
             }
           }
         }
@@ -701,22 +822,6 @@
                 },
                 {
                   "key": {
-                    "symbol": "category"
-                  },
-                  "val": {
-                    "string": "Category"
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "certifications"
-                  },
-                  "val": {
-                    "vec": []
-                  }
-                },
-                {
-                  "key": {
                     "symbol": "created_at"
                   },
                   "val": {
@@ -725,42 +830,18 @@
                 },
                 {
                   "key": {
-                    "symbol": "custom"
-                  },
-                  "val": {
-                    "map": []
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "description"
-                  },
-                  "val": {
-                    "string": "Description"
-                  }
-                },
-                {
-                  "key": {
                     "symbol": "id"
                   },
                   "val": {
-                    "string": "PROD-01"
+                    "u64": 1
                   }
                 },
                 {
                   "key": {
-                    "symbol": "media_hashes"
+                    "symbol": "metadata"
                   },
                   "val": {
-                    "vec": []
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "name"
-                  },
-                  "val": {
-                    "string": "Test Product"
+                    "string": "Metadata"
                   }
                 },
                 {
@@ -768,16 +849,7 @@
                     "symbol": "origin"
                   },
                   "val": {
-                    "map": [
-                      {
-                        "key": {
-                          "symbol": "location"
-                        },
-                        "val": {
-                          "string": "Origin"
-                        }
-                      }
-                    ]
+                    "string": "Nigeria"
                   }
                 },
                 {
@@ -787,16 +859,64 @@
                   "val": {
                     "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
                   }
-                },
-                {
-                  "key": {
-                    "symbol": "tags"
-                  },
-                  "val": {
-                    "vec": []
-                  }
                 }
               ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "is_authorized"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "u64": 1
+                },
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "is_authorized"
+              }
+            ],
+            "data": {
+              "bool": false
             }
           }
         }
@@ -827,7 +947,7 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
-                  "string": "PROD-01"
+                  "u64": 1
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4"
@@ -920,7 +1040,7 @@
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                     },
                     {
-                      "string": "PROD-01"
+                      "u64": 1
                     },
                     {
                       "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAITA4"
